@@ -2,14 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern Weather App - Get real-time weather information">
+  <title>Weather App - Real-time Weather Information</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <form id="search-form">
-    <input type="text" id="location-input" placeholder="Enter city" />
-    <button type="submit">Search</button>
-  </form>
+  <div class="container">
+    <header class="app-header">
+      <h1 class="app-title"><i class="fas fa-cloud-sun"></i> Weather Dashboard</h1>
+      <p class="app-subtitle">Get real-time weather information for any location</p>
+    </header>
 
-  <div id="weather"></div>
+    <div class="search-section">
+      <form id="search-form" class="search-form">
+        <div class="search-wrapper">
+          <input 
+            type="text" 
+            id="location-input" 
+            class="search-input"
+            placeholder="Enter city name (e.g., London, Tokyo)" 
+            required
+          />
+          <button type="submit" class="search-button">
+            <i class="fas fa-search search-icon"></i>
+            <span class="search-text">Search</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div id="weather" class="weather-container"></div>
+
+    <footer class="app-footer">
+      <p>Built for The Odin Project | Data from Visual Crossing Weather API</p>
+    </footer>
+  </div>
 </body>
 </html>

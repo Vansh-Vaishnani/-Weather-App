@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack"
@@ -21,6 +20,7 @@
   "homepage": "https://github.com/Vansh-Vaishnani/-Weather-App#readme",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "dotenv-webpack": "^8.1.1",
     "html-webpack-plugin": "^5.6.5",
     "style-loader": "^4.0.0",
     "webpack": "^5.104.1",
