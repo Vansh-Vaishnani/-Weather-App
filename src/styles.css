@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e0f2fe;
+}
+
+#weather {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+}
